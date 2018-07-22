@@ -1,0 +1,16 @@
+processes 0 5
+bidirected 1
+link from 0 to 4 latency 2
+link from 0 to 5 latency 4
+link from 1 to 5 latency 7
+link from 2 to 1 latency 3
+link from 2 to 3 latency 2
+link from 4 to 1 latency 5
+link from 4 to 5 latency 2
+link from 5 to 2 latency 2
+link from 5 to 3 latency 6
+;link from 3 to 5 latency 6
+;link from all to all
+setprocesses 1 11 TEST
+send from -1 to 1 TEST_HELLO 1
+;wait 60 
